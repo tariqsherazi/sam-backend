@@ -2,6 +2,7 @@
 const {Demo}=require("../Model/DemoModel")
 exports.addDemo=async(req,res)=>{
     try{
+        console.log(req.body)
     const demo= await  Demo.create({
         first_name:req.body.first_name,
         last_name:req.body.last_name,
